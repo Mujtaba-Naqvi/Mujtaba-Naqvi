@@ -1,0 +1,25 @@
+def bubble_sort(arr):
+    n = len(arr)
+
+    # Sorting in ascending order
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+    # Sorting in descending order
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] < arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+    return arr
+
+# Test the function with a sample 5-element array
+if __name__ == "__main__":
+    arr = [64, 34, 25, 12, 22]
+    sorted_arr = bubble_sort(arr.copy())
+    print("Ascending order:", sorted_arr)
+
+    sorted_arr_desc = bubble_sort(arr.copy())
+    print("Descending order:", sorted_arr_desc)
