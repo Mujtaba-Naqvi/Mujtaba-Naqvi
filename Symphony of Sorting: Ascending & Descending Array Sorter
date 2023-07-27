@@ -23,3 +23,7 @@ if __name__ == "__main__":
 
     sorted_arr_desc = bubble_sort(arr.copy())
     print("Descending order:", sorted_arr_desc)
+
+#OutPut
+Ascending order: [12, 22, 25, 34, 64]
+Descending order: [12, 22, 25, 34, 64]
